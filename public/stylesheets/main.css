@@ -1,0 +1,505 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "logo middle language" "logo middle language";
+  font-family: "Concert One", cursive;
+  font-size: 18px;
+  color: #316613;
+}
+
+.header {
+  background-color: white;
+}
+
+.slid1 p,
+.slid1 h3 {
+  color: orange;
+  font-family: "Concert One", cursive;
+  font-weight: 700;
+}
+
+.slid2 p,
+.slid2 h3 {
+  color: brown;
+  font-family: "Concert One", cursive;
+  font-weight: 700;
+}
+
+.slid3 p, .slid3 h3 {
+  color: blue;
+  font-family: "Concert One", cursive;
+  font-weight: 700;
+}
+
+.main-idea {
+  margin: 0 30px;
+}
+
+.idea {
+  border-bottom: 3px solid #316613;
+}
+
+.idea {
+  text-align: center;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+.navbar-nav .nav-item {
+  width: 299px;
+  height: 76px;
+}
+.navbar-nav .nav-item .nav-link {
+  text-align: center;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: "Concert One", cursive;
+  color: #316613;
+}
+
+.btn {
+  background-color: orange;
+  border: none;
+}
+.btn .icon-lang {
+  font-family: "fontello";
+}
+
+.lang {
+  padding: 10px;
+  font-size: 14px;
+}
+.lang .menuitems {
+  padding: 3px;
+}
+
+.header {
+  max-width: 1440px;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-toggler {
+    border: 0px solid white;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    color: greenyellow;
+  }
+
+  .grid-wrapper {
+    grid-template-columns: 180px auto;
+    grid-template-rows: 210px 1fr;
+    grid-template-areas: "logo language" "middle middle";
+  }
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+  .navbar-nav .nav-item:hover {
+    background-color: seagreen;
+  }
+  .navbar-nav .nav-item:hover .nav-link:hover {
+    color: white;
+  }
+}
+@media (max-width: 1023px) {
+  .nav-link {
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .nav-link {
+    width: 100%;
+  }
+}
+.logo {
+  grid-area: logo;
+}
+
+.middle {
+  grid-area: middle;
+}
+
+.language {
+  grid-area: language;
+}
+
+.footer-block, .card-header__footer, .card-footer {
+  background-color: #A86B0F;
+}
+
+.footer {
+  font-family: "Concert One", cursive;
+  font-size: 18px;
+  color: white;
+}
+
+.footer {
+  margin-top: -96px;
+}
+
+.footer {
+  max-width: 1440px;
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .card-body-footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 75% 25%;
+    grid-template-areas: "place contacts" "media media";
+  }
+
+  .footer-item {
+    min-width: 320px;
+  }
+
+  .place {
+    grid-area: place;
+  }
+
+  .contacts {
+    grid-area: contacts;
+  }
+
+  .media {
+    grid-area: media;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .media .footer-item_media {
+    justify-content: center;
+  }
+}
+@media (min-width: 1025px) {
+  .card-body-footer {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-areas: "place contacts media";
+  }
+}
+@media (max-width: 700px) {
+  .card-body-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-item {
+    max-width: 320px;
+  }
+}
+.img {
+  height: 26px;
+  width: 100%;
+  background-image: url(/public/images/background_2.png);
+}
+
+.card-header__footer,
+.card {
+  border: 0px solid #A86B0F;
+}
+
+.card-header__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contacts {
+  text-decoration: none;
+}
+
+.footer-item-contact__data ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-item_media {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.footer-item_media .place {
+  grid-area: place;
+}
+.footer-item_media .contacts {
+  grid-area: contacts;
+}
+.footer-item_media .media-item {
+  margin: 10px;
+}
+.footer-item_media .media-item a {
+  font-family: "fontello";
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+.footer-item_media .media-item a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+.media {
+  flex-direction: column;
+  grid-area: media;
+}
+
+.contact_us {
+  background-color: #A86B0F;
+  font-size: 25px;
+  color: white;
+}
+.contact_us:hover {
+  color: yellow;
+  background-color: yellowgreen;
+  text-decoration: none;
+}
+.contact_us:focus {
+  text-decoration: none;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.place-link, .tel-link, .email-link {
+  text-decoration: none;
+  color: white;
+}
+.place-link:hover, .tel-link:hover, .email-link:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+.carusel {
+  height: 600px;
+  position: relative;
+}
+
+.background__main {
+  position: absolute;
+  bottom: 0px;
+}
+
+.carusel {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.main {
+  max-width: 1440px;
+}
+
+.project_name {
+  display: flex;
+  justify-content: center;
+}
+.project_name .nam_project {
+  margin: 30px auto;
+  color: #316613;
+  font-size: 37px;
+  font-family: "Concert One", cursive;
+  font-weight: 700;
+}
+
+.resolve {
+  display: grid;
+  position: relative;
+  grid-template-columns: 35% 1fr;
+  grid-template-rows: 20% 1fr;
+  grid-template-areas: "task img" "text img";
+}
+.resolve .project_task {
+  grid-area: task;
+  font-size: 35px;
+  font-family: "Concert One", cursive;
+  color: brown;
+}
+.resolve .project_img {
+  grid-area: img;
+}
+.resolve .project_img img {
+  width: 90%;
+}
+.resolve .resolve-text {
+  grid-area: text;
+  font-size: 25px;
+  font-family: "Concert One", cursive;
+  color: #316613;
+}
+
+.main {
+  max-width: 1440px;
+}
+
+@media (min-width: 1440px) {
+  .excurcion-text {
+    margin: 30px;
+  }
+
+  .wrapper2 {
+    margin: 0 70px;
+  }
+
+  .ex {
+    font-size: 20px;
+  }
+}
+.wrapper2 {
+  background-color: #316613;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-template-areas: "text images";
+}
+.wrapper2 .ex-text {
+  grid-area: text;
+}
+.wrapper2 .ex-images {
+  grid-area: images;
+}
+
+.excursion_img img {
+  width: 70%;
+  height: 40%;
+  margin: 10px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wrapper2 {
+    margin: 0 30px;
+  }
+
+  .excurcion-text {
+    margin: 10px;
+  }
+
+  .ex-button {
+    font-size: 15px;
+  }
+
+  .resolve {
+    display: grid;
+    grid-template-rows: 15% 1fr;
+  }
+  .resolve .project_img {
+    margin-top: 40px;
+  }
+  .resolve .project_img img {
+    width: 100%;
+  }
+  .resolve .ex-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 767px) {
+  .carusel {
+    display: none;
+  }
+
+  .excurcion-text {
+    margin: 10px;
+  }
+
+  .excursion_img img {
+    width: 30%;
+    height: 20%;
+  }
+
+  .wrapper2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "text" "images";
+  }
+
+  .resolve {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 35% auto;
+    grid-template-areas: "task" "img" "text";
+  }
+  .resolve .project_img {
+    text-align: center;
+  }
+  .resolve .project_img img {
+    width: 75%;
+    height: 100%;
+  }
+  .resolve .project_task {
+    text-align: center;
+  }
+  .resolve .resolve-text {
+    font-size: 15px;
+  }
+}
+.excursion_wrapper {
+  background-color: #316613;
+  font-family: "Concert One", cursive;
+}
+
+.background_3 {
+  background-color: white;
+}
+
+.img_background {
+  border: 0px solid #316613;
+  height: 26px;
+}
+
+.img1 {
+  text-align: right;
+}
+
+.img2 {
+  text-align: left;
+}
+
+.ex-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ex-button {
+  width: 100%;
+  background-color: white;
+  color: #316613;
+  border-style: double;
+  font-size: 36px;
+}
+.ex-button:hover {
+  color: orange;
+  background-color: white;
+}
+.ex-button:focus {
+  background-color: #316613;
+  outline: none;
+}
+
+.ex .card {
+  color: #316613;
+}
+
+.products {
+  background-color: #316613;
+}
+
+/*# sourceMappingURL=main.css.map */

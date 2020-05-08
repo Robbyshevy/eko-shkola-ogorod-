@@ -1,0 +1,5 @@
+@mixin main_font($color) {
+    font-family: 'Concert One', cursive;
+    font-size: 18px;
+    color: $color;
+}

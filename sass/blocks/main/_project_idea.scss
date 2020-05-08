@@ -1,0 +1,30 @@
+.project_name {display: flex;
+justify-content: center;
+.nam_project {margin: 30px auto;
+color: rgb(49, 102, 19);
+font-size: 37px;
+font-family:'Concert One', cursive;
+font-weight: 700;
+}
+}
+.resolve {display: grid;
+    position: relative;
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: 20% 1fr;
+    .project_task {
+        grid-area: task;
+        font-size: 35px;
+        font-family: 'Concert One', cursive;
+        color: brown;
+    }
+    .project_img {grid-area: img;
+        img {width: 90%;}
+        
+    }
+    .resolve-text {grid-area: text;
+        font-size: 25px;
+        font-family: 'Concert One', cursive;
+        color:rgb(49, 102, 19) ;}
+grid-template-areas: "task img"
+"text img";
+}

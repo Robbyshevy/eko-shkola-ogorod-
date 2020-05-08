@@ -1,0 +1,54 @@
+.excursion_wrapper {
+    background-color: rgb(49, 102, 19);
+    font-family: 'Concert One', cursive;
+}
+
+.background_3 {
+    background-color: white;
+}
+
+.img_background {
+    border: 0px solid rgb(49, 102, 19);
+    height: 26px;
+}
+
+
+
+.img1 {
+    text-align: right;
+}
+
+.img2 {
+    text-align: left;
+}
+
+.ex-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+
+    .ex-button {
+        width: 100%;
+        background-color: white;
+        color: rgb(49, 102, 19);
+        border-style: double;
+
+        font-size: 36px;
+
+        &:hover {
+            color: orange;
+            background-color: white;
+        }
+
+        &:focus {
+            background-color: rgb(49, 102, 19);
+            outline: none;
+        }
+    }
+
+    .ex {
+        .card {
+            color: rgb(49, 102, 19);
+        }
+    }

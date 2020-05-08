@@ -1,0 +1,39 @@
+.header {max-width: 1440px;}
+
+@media (max-width: 767px)
+{.navbar-nav {flex-direction: column;}
+    .navbar-toggler {border: 0px solid white;
+.navbar-toggler-icon {color: greenyellow;}};
+
+ .grid-wrapper {grid-template-columns: 180px auto;
+grid-template-rows: 210px 1fr;
+grid-template-areas: "logo language"
+"middle middle";}
+}
+
+@media (min-width:768px)
+{
+    .navbar-nav {flex-direction: row;
+    justify-content: space-between;
+  
+    flex-wrap: wrap;
+    .nav-item {margin: 0 10px;}
+    .nav-item:hover {background-color: seagreen;
+        .nav-link:hover {color: white;}}
+    }}
+
+
+    @media (max-width: 1023px) 
+    {
+    .nav-link {width: 100%;} 
+    }
+
+    @media (min-width:1440px)
+    {
+        .nav-link {width: 100%;}    
+    }
+
+ 
+       
+
+    
