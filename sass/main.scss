@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Mark';
+    src:url(../../public/Fonts/18942.otf);
+};
 @import "layout/header";
 @import "core/core";
 @import "elements/header/h1";
@@ -20,5 +24,6 @@
 @import "media/main-media";
 @import "blocks/main/excursion";
 @import "blocks/main/products";
+@import "elements/main/products";
 
 

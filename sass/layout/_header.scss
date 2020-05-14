@@ -7,6 +7,7 @@
     grid-template-areas: "logo middle language"
         "logo middle language";
     @include main_font(rgb(49, 102, 19));
+    font-family: 'Mark';
 }
 
 .header {
@@ -18,7 +19,7 @@
     p,
     h3 {
         color: orange;
-        font-family:'Concert One', cursive;
+        font-family:'Mark';
         font-weight: 700; ;
     }
 }
@@ -28,13 +29,13 @@
     p,
     h3 {
         color: brown;
-        font-family: 'Concert One', cursive;
+        font-family: 'Mark';
         font-weight: 700;
     }
 }
  .slid3 {
      p, h3 {color: blue;
-        font-family: 'Concert One', cursive;
+        font-family: 'Mark';
         font-weight: 700;
     }
  }

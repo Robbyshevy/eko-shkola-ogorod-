@@ -1,23 +1,28 @@
 .header {max-width: 1440px;}
 
-@media (max-width: 767px)
+@media (max-width: 768px)
 {.navbar-nav {flex-direction: column;}
     .navbar-toggler {border: 0px solid white;
 .navbar-toggler-icon {color: greenyellow;}};
-
+.nav-item {height: 90px;
+    border-bottom: 2px solid seagreen;
+    width: 100%;}
+  
+ @media (max-width: 425px)  {
  .grid-wrapper {grid-template-columns: 180px auto;
 grid-template-rows: 210px 1fr;
 grid-template-areas: "logo language"
 "middle middle";}
-}
+}}
 
-@media (min-width:768px)
+@media (min-width:769px)
 {
     .navbar-nav {flex-direction: row;
-    justify-content: space-between;
-  
+        justify-self: start;
     flex-wrap: wrap;
-    .nav-item {margin: 0 10px;}
+    .nav-item {margin: 0 0;
+        height: 76px;
+        width: 22%;}
     .nav-item:hover {background-color: seagreen;
         .nav-link:hover {color: white;}}
     }}

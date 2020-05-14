@@ -1,2 +1,7 @@
-.carusel {height: 600px;
-position: relative;}
+.carusel {height: 650px;
+position: relative;
+background: url(public/images/background.png) no-repeat fixed;
+background-size: contain;
+background-position: bottom;
+}
+

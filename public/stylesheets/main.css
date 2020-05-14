@@ -1,11 +1,16 @@
+@font-face {
+  font-family: "Mark";
+  src: url(../../public/Fonts/18942.otf);
+}
 .grid-wrapper {
   display: grid;
   grid-template-columns: 180px 1fr auto;
   grid-template-rows: 50% 50%;
   grid-template-areas: "logo middle language" "logo middle language";
-  font-family: "Concert One", cursive;
+  font-family: "Mark";
   font-size: 18px;
   color: #316613;
+  font-family: "Mark";
 }
 
 .header {
@@ -15,20 +20,20 @@
 .slid1 p,
 .slid1 h3 {
   color: orange;
-  font-family: "Concert One", cursive;
+  font-family: "Mark";
   font-weight: 700;
 }
 
 .slid2 p,
 .slid2 h3 {
   color: brown;
-  font-family: "Concert One", cursive;
+  font-family: "Mark";
   font-weight: 700;
 }
 
 .slid3 p, .slid3 h3 {
   color: blue;
-  font-family: "Concert One", cursive;
+  font-family: "Mark";
   font-weight: 700;
 }
 
@@ -54,25 +59,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 20px 10px;
-}
-.navbar-nav .nav-item {
-  width: 299px;
-  height: 76px;
+  padding: 0px 10px 40px 10px;
 }
 .navbar-nav .nav-item .nav-link {
   text-align: center;
   text-decoration: none;
   font-size: 23px;
-  font-family: "Concert One", cursive;
+  font-family: "Mark";
   color: #316613;
 }
 
-.btn {
+.languageOne {
   background-color: orange;
   border: none;
 }
-.btn .icon-lang {
+.languageOne .icon-lang {
   font-family: "fontello";
 }
 
@@ -88,7 +89,7 @@
   max-width: 1440px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar-nav {
     flex-direction: column;
   }
@@ -100,20 +101,29 @@
     color: greenyellow;
   }
 
+  .nav-item {
+    height: 90px;
+    border-bottom: 2px solid seagreen;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
   .grid-wrapper {
     grid-template-columns: 180px auto;
     grid-template-rows: 210px 1fr;
     grid-template-areas: "logo language" "middle middle";
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-nav {
     flex-direction: row;
-    justify-content: space-between;
+    justify-self: start;
     flex-wrap: wrap;
   }
   .navbar-nav .nav-item {
-    margin: 0 10px;
+    margin: 0 0;
+    height: 76px;
+    width: 22%;
   }
   .navbar-nav .nav-item:hover {
     background-color: seagreen;
@@ -149,13 +159,10 @@
 }
 
 .footer {
-  font-family: "Concert One", cursive;
+  font-family: "Mark";
   font-size: 18px;
   color: white;
-}
-
-.footer {
-  margin-top: -96px;
+  font-family: "Mark";
 }
 
 .footer {
@@ -281,6 +288,7 @@
 
 .img {
   max-width: 100%;
+  background-color: #316613;
 }
 
 .place-link, .tel-link, .email-link {
@@ -293,8 +301,11 @@
 }
 
 .carusel {
-  height: 600px;
+  height: 650px;
   position: relative;
+  background: url(public/images/background.png) no-repeat fixed;
+  background-size: contain;
+  background-position: bottom;
 }
 
 .background__main {
@@ -319,7 +330,7 @@
   margin: 30px auto;
   color: #316613;
   font-size: 37px;
-  font-family: "Concert One", cursive;
+  font-family: "Mark";
   font-weight: 700;
 }
 
@@ -333,7 +344,7 @@
 .resolve .project_task {
   grid-area: task;
   font-size: 35px;
-  font-family: "Concert One", cursive;
+  font-family: "Mark";
   color: brown;
 }
 .resolve .project_img {
@@ -345,7 +356,7 @@
 .resolve .resolve-text {
   grid-area: text;
   font-size: 25px;
-  font-family: "Concert One", cursive;
+  font-family: "Mark";
   color: #316613;
 }
 
@@ -455,9 +466,40 @@
     font-size: 15px;
   }
 }
+@media (max-width: 1024px) {
+  .product-imagemain {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .product-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px auto;
+    grid-template-areas: "image" "menu";
+  }
+}
+@media (min-width: 769px) {
+  .product-wrapper {
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "menu image";
+  }
+}
+@media (max-width: 425px) {
+  .for_garden,
+.product-imagemain {
+    font-size: 25px;
+  }
+}
+@media (min-width: 426px) {
+  .for_garden,
+.product-imagemain {
+    font-size: 45px;
+  }
+}
 .excursion_wrapper {
   background-color: #316613;
-  font-family: "Concert One", cursive;
+  font-family: "Mark";
 }
 
 .background_3 {
@@ -505,6 +547,212 @@
 
 .products {
   background-color: #316613;
+  font-family: "Mark";
+}
+
+.product-wrapper {
+  padding: 40px 15px;
+  background-color: #316613;
+  display: grid;
+}
+.product-wrapper .product-menu {
+  grid-area: menu;
+  background-color: #316613;
+  width: 100%;
+}
+.product-wrapper .product-menu .accordion {
+  width: 100%;
+}
+.product-wrapper .product-menu .accordion .card {
+  background-color: #316613;
+}
+.product-wrapper .product-menu .accordion .card .card-header {
+  width: 100%;
+}
+.product-wrapper .product-menu .accordion .card .card-header h2 {
+  width: 100%;
+}
+.product-wrapper .product-menu .accordion .card .card-header h2 button {
+  width: 100%;
+  border-radius: 75px;
+  height: 160px;
+}
+.product-wrapper .product-menu .accordion .card .card-header h2 button:hover {
+  color: orange;
+  text-decoration: none;
+}
+.product-wrapper .product-menu .accordion .card .collapse {
+  background-color: white;
+  width: 95%;
+}
+.product-wrapper .product-menu .accordion .card .collapse .card-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.product-wrapper .product-imagemain {
+  grid-area: image;
+  border-radius: 75px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 900;
+  background: url(../../public/images/products/main_img.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.vegetables {
+  background: url(../../public/images/products/vegetables.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Mark";
+}
+
+.fruits {
+  background: url(../../public/images/products/fruits.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Mark";
+}
+
+.berries {
+  background: url(../../public/images/products/berries.jpeg) no-repeat center;
+  background-size: cover;
+  color: white;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Mark";
+}
+
+.green {
+  background: url(../../public/images/products/green.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Mark";
+}
+
+.for_garden {
+  background: url(../../public/images/products/for_garden.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  font-weight: 900;
+  font-family: "Mark";
+}
+
+.product-image {
+  width: 260px;
+  height: 260px;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  border-radius: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin: 15px;
+}
+
+.tomato {
+  background: url(../../public/images/products/tomato.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.ogurets {
+  background: url(../../public/images/products/ogurets.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.perez {
+  background: url(../../public/images/products/perez.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.apple {
+  background: url(../../public/images/products/apple.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.grusha {
+  background: url(../../public/images/products/grushi.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.malina {
+  background: url(../../public/images/products/malina.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.golubika {
+  background: url(../../public/images/products/golubika.png) center no-repeat;
+  background-size: cover;
+}
+
+.ezevika {
+  background: url(../../public/images/products/ezhevika.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.ukrop {
+  background: url(../../public/images/products/ukrop.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.petrushka {
+  background: url(../../public/images/products/petrushka-2.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.biogumus {
+  background: url(../../public/images/products/biogumus.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.grunt_un {
+  background: url(../../public/images/products/grunt-uni.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.grunt-or {
+  background: url(../../public/images/products/grunt-dlya-orhidey-88-768x513.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.kora_m {
+  background: url(../../public/images/products/kora_dm.jpg) center no-repeat;
+  background-size: cover;
+  font-size: 30px;
+}
+
+.shp_k {
+  background: url(../../public/images/products/SHHepka-1.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.schp-m {
+  background: url(../../public/images/products/cshepa_m.jpg) center no-repeat;
+  background-size: cover;
+  font-size: 30px;
+}
+
+.zola {
+  background: url(../../public/images/products/zola.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.product-price {
+  font-size: 25px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

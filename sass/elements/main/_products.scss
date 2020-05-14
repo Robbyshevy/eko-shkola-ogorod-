@@ -1,0 +1,52 @@
+.product-image { width: 260px;
+height: 260px;
+text-align:center;
+color: white;
+font-size: 35px;
+border-radius: 75px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 700;
+margin: 15px;
+}
+
+.tomato {background: url(../../public/images/products/tomato.jpg) center no-repeat;
+background-size: cover;}
+.ogurets {background: url(../../public/images/products/ogurets.jpg) center no-repeat;
+    background-size: cover;}
+.perez {background: url(../../public/images/products/perez.jpg) center no-repeat;
+    background-size: cover;}
+.apple {background: url(../../public/images/products/apple.jpg) center no-repeat;
+    background-size: cover;}
+.grusha {background: url(../../public/images/products/grushi.jpg) center no-repeat;
+    background-size: cover;}
+.malina {background: url(../../public/images/products/malina.jpg) center no-repeat;
+    background-size: cover;}
+.golubika  {background: url(../../public/images/products/golubika.png) center no-repeat;
+    background-size: cover;}
+.ezevika {background: url(../../public/images/products/ezhevika.jpg) center no-repeat;
+    background-size: cover;}
+.ukrop {background: url(../../public/images/products/ukrop.jpg) center no-repeat;
+    background-size: cover;}
+.petrushka {background: url(../../public/images/products/petrushka-2.jpg) center no-repeat;
+    background-size: cover;}
+.biogumus {background: url(../../public/images/products/biogumus.jpg) center no-repeat;
+    background-size: cover;}
+.grunt_un {background: url(../../public/images/products/grunt-uni.jpg) center no-repeat;
+    background-size: cover;}
+.grunt-or {background: url(../../public/images/products/grunt-dlya-orhidey-88-768x513.jpg) center no-repeat;
+    background-size: cover;}
+.kora_m {background: url(../../public/images/products/kora_dm.jpg) center no-repeat;
+    background-size: cover;
+    font-size: 30px;}
+.shp_k {background: url(../../public/images/products/SHHepka-1.jpg) center no-repeat;
+    background-size: cover;}
+    .schp-m {background: url(../../public/images/products/cshepa_m.jpg) center no-repeat;
+    background-size: cover;
+font-size: 30px;}
+.zola {background: url(../../public/images/products/zola.jpg) center no-repeat;
+    background-size: cover;}
+
+    .product-price {font-size: 25px;
+    text-align: center;}
