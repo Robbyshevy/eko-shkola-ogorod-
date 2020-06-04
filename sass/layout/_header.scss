@@ -3,7 +3,6 @@
 .grid-wrapper {
     display: grid;
     grid-template-columns: 180px 1fr auto;
-    grid-template-rows: 50% 50%;
     grid-template-areas: "logo middle language"
         "logo middle language";
     @include main_font(rgb(49, 102, 19));
@@ -12,32 +11,39 @@
 
 .header {
     background-color: white;
+    margin: 30px 30px 0 30px;
 }
 
 .slid1 {
 
     p,
-    h3 {
-        color: orange;
+    h1 {
+        color: white;
         font-family:'Mark';
         font-weight: 700; ;
     }
+p {font-size: 30px;}
 }
+
 
 .slid2 {
 
     p,
-    h3 {
-        color: brown;
+    h1 {
+        color: white;
         font-family: 'Mark';
         font-weight: 700;
     }
+p {font-size: 30px;}
 }
  .slid3 {
-     p, h3 {color: blue;
+     p, h1 {color: white;
         font-family: 'Mark';
         font-weight: 700;
     }
- }
- * {margin: 0 auto;
-padding: 0 auto;}
+    p {font-size: 30px;}
+}
+ 
+ * {margin: 0;
+padding: 0;}
+ 

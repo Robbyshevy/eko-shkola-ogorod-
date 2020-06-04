@@ -1,31 +1,25 @@
 .excursion_wrapper {
-    background-color: rgb(49, 102, 19);
+    background-color: orange;
     font-family: 'Mark';
 }
 
 .background_3 {
-    background-color: white;
+    background-color: orange;
 }
 
 .img_background {
-    border: 0px solid rgb(49, 102, 19);
+    border: none;
     height: 26px;
 }
 
 
+.event-col {width: 100%;}
 
-.img1 {
-    text-align: right;
-}
-
-.img2 {
-    text-align: left;
-}
-
-.ex-text {
+.ex-text, .ex-images {
     display: flex;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+margin: 15px;}
 
 
     .ex-button {
@@ -33,22 +27,43 @@
         background-color: white;
         color: rgb(49, 102, 19);
         border-style: double;
-
         font-size: 36px;
-
         &:hover {
             color: orange;
             background-color: white;
         }
 
-        &:focus {
+        &:focus { 
+            width: 100%;
             background-color: rgb(49, 102, 19);
             outline: none;
         }
+
+    }
+.ev-button {
+    width: 100%;
+    background-color: white;
+    color: rgb(49, 102, 19);
+    border-style: double;
+    
+
+    font-size: 26px;
+
+    &:hover {
+        color: orange;
+        background-color: white;
     }
 
+    &:focus { 
+        width: 100%;
+        background-color: rgb(49, 102, 19);
+        outline: none;
+    }
+
+}
     .ex {
         .card {
             color: rgb(49, 102, 19);
         }
     }
+    
