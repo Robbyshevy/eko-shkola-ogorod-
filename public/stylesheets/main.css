@@ -215,12 +215,16 @@
   }
 }
 .img {
-  height: 26px;
-  width: 100%;
+  height: 100%;
+  width: calc(100%-20px);
   background-image: url(/public/images/background_2.png) no-repeat;
   background-size: cover;
   background-color: #316613;
   border: 0px solid;
+}
+.img img {
+  width: 100%;
+  height: 28px;
 }
 
 .card-header__footer,
@@ -297,7 +301,6 @@
 }
 
 .carusel {
-  height: 650px;
   position: relative;
   background: url(public/images/background.png) no-repeat fixed;
   background-size: contain;
@@ -307,16 +310,19 @@
 .background__main {
   position: absolute;
   bottom: 0px;
+  width: 100%;
 }
 
 .carusel {
   width: 100%;
+  height: 100%;
 }
 
 .background__main2 {
   position: absolute;
   top: 0px;
   z-index: 1;
+  width: 100%;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -393,6 +399,48 @@
   padding-top: 30px;
   font-family: "Mark";
   color: #316613;
+}
+
+.project_idea_background img {
+  height: auto;
+  width: calc(100% - 10px);
+}
+
+.doings p {
+  font-family: "Mark";
+  font-size: 34px;
+  text-align: center;
+  margin: 20px;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.tasks .taskBlock {
+  margin: 10px auto;
+  width: 280px;
+}
+.tasks .taskBlock .taskImage img {
+  width: 80%;
+}
+
+.taskName,
+.taskText {
+  font-family: "Mark";
+  text-align: center;
+  margin: 10px;
+}
+
+.taskName {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.taskText {
+  font-size: 20px;
 }
 
 .main {
@@ -506,7 +554,7 @@
 }
 @media (max-width: 1024px) {
   .product-imagemain {
-    font-size: 40px;
+    font-size: 70px;
   }
 }
 @media (max-width: 768px) {
@@ -534,9 +582,12 @@
   }
 }
 @media (max-width: 425px) {
-  .for_garden,
-.product-imagemain {
+  .btn, .product-imagemain {
     font-size: 25px;
+  }
+
+  .for_garden {
+    font-size: 15px;
   }
 }
 @media (min-width: 426px) {
@@ -544,14 +595,27 @@
 .product-imagemain {
     font-size: 45px;
   }
+
+  .btn {
+    font-size: 30px;
+  }
 }
 .excursion_wrapper {
   background-color: orange;
   font-family: "Mark";
+  position: relative;
+}
+.excursion_wrapper .background__main2 {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
 }
 
 .background_3 {
   background-color: orange;
+  width: 100%;
+  height: 100%;
 }
 
 .img_background {
@@ -575,7 +639,7 @@
   background-color: white;
   color: #316613;
   border-style: double;
-  font-size: 36px;
+  font-size: 26px;
 }
 .ex-button:hover {
   color: orange;
@@ -616,7 +680,8 @@
 .product-wrapper {
   padding: 40px 15px;
   background-color: #316613;
-  display: grid;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .product-wrapper .product-menu {
   grid-area: menu;
@@ -630,7 +695,8 @@
   background-color: #316613;
 }
 .product-wrapper .product-menu .accordion .card .card-header {
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 .product-wrapper .product-menu .accordion .card .card-header h2 {
   width: 100%;
@@ -646,7 +712,8 @@
 }
 .product-wrapper .product-menu .accordion .card .collapse {
   background-color: white;
-  width: 95%;
+  width: 100%;
+  border-radius: 25px;
 }
 .product-wrapper .product-menu .accordion .card .collapse .card-body {
   display: flex;
@@ -658,6 +725,7 @@
   border-radius: 75px;
   text-align: center;
   display: flex;
+  height: auto;
   justify-content: center;
   align-items: center;
   color: white;
@@ -665,12 +733,14 @@
   background: url(../../public/images/products/main_img.jpg) no-repeat center;
   background-size: cover;
 }
+.product-wrapper .product-imagemain p {
+  margin: 90px auto;
+}
 
 .vegetables {
   background: url(../../public/images/products/vegetables.jpg) no-repeat center;
   background-size: cover;
   color: white;
-  font-size: 45px;
   font-weight: 900;
   font-family: "Mark";
 }
@@ -679,7 +749,6 @@
   background: url(../../public/images/products/fruits.jpg) no-repeat center;
   background-size: cover;
   color: white;
-  font-size: 45px;
   font-weight: 900;
   font-family: "Mark";
 }
@@ -688,7 +757,6 @@
   background: url(../../public/images/products/berries.jpeg) no-repeat center;
   background-size: cover;
   color: white;
-  font-size: 45px;
   font-weight: 900;
   font-family: "Mark";
 }
@@ -697,7 +765,6 @@
   background: url(../../public/images/products/green.jpg) no-repeat center;
   background-size: cover;
   color: white;
-  font-size: 45px;
   font-weight: 900;
   font-family: "Mark";
 }
@@ -711,8 +778,8 @@
 }
 
 .product-image {
-  width: 260px;
-  height: 260px;
+  width: 200px;
+  height: 200px;
   text-align: center;
   color: white;
   font-size: 35px;

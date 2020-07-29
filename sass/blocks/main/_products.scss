@@ -6,7 +6,8 @@
 .product-wrapper {
     padding: 40px 15px;
     background-color: rgb(49, 102, 19);
-    display: grid;
+    display: flex;
+    flex-direction: column-reverse;
 
     .product-menu {
         grid-area: menu;
@@ -20,7 +21,8 @@
                 background-color: rgb(49, 102, 19);
 
                 .card-header {
-                    width: 100%;
+                    width: 80%;
+                    margin: auto;
 
                     h2 {
                         width: 100%;
@@ -40,7 +42,8 @@
 
                 .collapse {
                     background-color: white;
-                    width: 95%;
+                    width: 100%;
+                    border-radius: 25px;
 
                     .card-body {
                         display: flex;
@@ -57,12 +60,16 @@
         border-radius: 75px;
         text-align: center;
         display: flex;
+        height: auto;
         justify-content: center;
         align-items: center;
         color: white;
         font-weight: 900;
         background: url(../../public/images/products/main_img.jpg) no-repeat center;
         background-size: cover;
+        p {
+            margin: 90px auto;
+        }
     }
 }
 
@@ -70,7 +77,7 @@
     background: url(../../public/images/products/vegetables.jpg) no-repeat center;
     background-size: cover;
     color: white;
-    font-size: 45px;
+    // font-size: 25px;
     font-weight: 900;
     font-family: 'Mark';
 }
@@ -79,7 +86,7 @@
     background: url(../../public/images/products/fruits.jpg) no-repeat center;
     background-size: cover;
     color: white;
-    font-size: 45px;
+    // font-size: 25px;
     font-weight: 900;
     font-family: 'Mark';
 }
@@ -88,7 +95,7 @@
     background: url(../../public/images/products/berries.jpeg) no-repeat center;
     background-size: cover;
     color: white;
-    font-size: 45px;
+    // font-size: 25px;
     font-weight: 900;
     font-family: 'Mark';
 }
@@ -97,7 +104,7 @@
     background: url(../../public/images/products/green.jpg) no-repeat center;
     background-size: cover;
     color: white;
-    font-size: 45px;
+    // font-size: 25px;
     font-weight: 900;
     font-family: 'Mark';
 }

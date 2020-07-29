@@ -1,46 +1,114 @@
-.project_name {display: flex;
-justify-content: center;
-flex-direction: column;
-.task-aim {
-    text-align: center;
-    padding: 0 auto;
-    font-family: 'Mark';
-    color: brown;
-    font-size: 30px;
-    font-weight: 600;
-}
-.nam_project {margin: 30px auto;
-color: rgb(49, 102, 19);
-font-size: 37px;
-font-family:'Mark';
-font-weight: 700;
+.project_name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
+    .task-aim {
+        text-align: center;
+        padding: 0 auto;
+        font-family: 'Mark';
+        color: brown;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .nam_project {
+        margin: 30px auto;
+        color: rgb(49, 102, 19);
+        font-size: 37px;
+        font-family: 'Mark';
+        font-weight: 700;
+
+    }
 }
-}
-.resolve {display: grid;
+
+.resolve {
+    display: grid;
     position: relative;
     grid-template-columns: 55% 1fr;
     grid-template-rows: 10% 1fr;
+
     .project_task {
         grid-area: task;
         font-size: 35px;
         font-family: 'Mark';
         color: brown;
         padding: 0 auto;
-        .task_text { text-align: center;
+
+        .task_text {
+            text-align: center;
         }
-        
+
     }
-    .project_img {grid-area: img;
-        img {width: 85%;}
-        
+
+    .project_img {
+        grid-area: img;
+
+        img {
+            width: 85%;
+        }
+
     }
-    .resolve-text {grid-area: text;
+
+    .resolve-text {
+        grid-area: text;
         font-size: 28px;
         padding-left: 20px;
         padding-top: 30px;
         font-family: 'Mark';
-        color:rgb(49, 102, 19) ;}
-grid-template-areas: "task task"
-"text img";
+        color: rgb(49, 102, 19);
+    }
+
+    grid-template-areas: "task task"
+    "text img";
+}
+
+.project_idea_background {
+    img {
+        height: auto;
+        width: calc(100% - 10px);
+    }
+}
+
+.doings {
+    p {
+        font-family: 'Mark';
+        font-size: 34px;
+        text-align: center;
+        margin: 20px;
+    }
+}
+
+.tasks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .taskBlock {
+        margin: 10px auto;
+        width: 280px;
+
+        .taskImage {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.taskName,
+.taskText {
+    font-family: 'Mark';
+    text-align: center;
+    margin: 10px;
+}
+
+.taskName {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.taskText {
+    font-size: 20px;
 }

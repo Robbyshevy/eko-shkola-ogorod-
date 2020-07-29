@@ -1,10 +1,17 @@
 .excursion_wrapper {
     background-color: orange;
     font-family: 'Mark';
+    position: relative;
+.background__main2 {position: absolute;
+    width: 100%;
+    top: 0px;
+z-index: 1;}
 }
 
 .background_3 {
     background-color: orange;
+    width: 100%;
+    height: 100%;
 }
 
 .img_background {
@@ -27,7 +34,7 @@ margin: 15px;}
         background-color: white;
         color: rgb(49, 102, 19);
         border-style: double;
-        font-size: 36px;
+        font-size: 26px;
         &:hover {
             color: orange;
             background-color: white;

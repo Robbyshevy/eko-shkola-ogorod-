@@ -1,11 +1,13 @@
 
 .background__main {position: absolute;
-bottom: 0px;}
-.carusel {width: 100%;
+bottom: 0px;
+width: 100%;}
+.carusel {width: 100%; height: 100%;
 }
 .background__main2 {position: absolute;
     top: 0px;
-z-index: 1;}
+z-index: 1;
+width: 100%;}
 .carousel-control-prev, .carousel-control-next {
     opacity: 1;
 }

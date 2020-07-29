@@ -129,7 +129,7 @@
 
 @media (max-width: 1024px) {
     .product-imagemain {
-        font-size: 40px;
+        font-size: 70px;
     }
 }
 
@@ -156,11 +156,11 @@
 }
 
 @media (max-width: 425px) {
-
-    .for_garden,
-    .product-imagemain {
+.btn, .product-imagemain {
         font-size: 25px;
     }
+    .for_garden {font-size: 15px;}
+    
 }
 
 @media (min-width: 426px) {
@@ -168,5 +168,8 @@
     .for_garden,
     .product-imagemain {
         font-size: 45px;
+    }
+    .btn{
+        font-size: 30px;
     }
 }
