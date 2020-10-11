@@ -65,6 +65,7 @@
 
 .navbar-nav {
   width: 100%;
+  padding: 0px 10px 40px 10px;
 }
 .navbar-nav .nav-item {
   margin: 0 5px;
@@ -76,6 +77,10 @@
   width: 100%;
   font-family: "Mark";
   color: #316613;
+}
+
+.navbar {
+  padding: 0 5px;
 }
 
 .languageOne {
@@ -132,11 +137,11 @@
 @media (min-width: 769px) {
   .navbar-nav {
     flex-direction: row;
-    justify-self: start;
+    justify-self: space-between;
     flex-wrap: wrap;
   }
   .navbar-nav .nav-item {
-    margin: 0 0;
+    margin: 0 5px;
     height: 76px;
     width: 22%;
   }

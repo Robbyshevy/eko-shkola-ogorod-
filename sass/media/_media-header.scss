@@ -26,9 +26,9 @@ grid-template-areas: "logo language"
 @media (min-width:769px)
 {
     .navbar-nav {flex-direction: row;
-        justify-self: start;
+        justify-self: space-between;
     flex-wrap: wrap;
-    .nav-item {margin: 0 0;
+    .nav-item {margin: 0 5px;
         height: 76px;
         width: 22%;}
     .nav-item:hover {background-color: seagreen;
