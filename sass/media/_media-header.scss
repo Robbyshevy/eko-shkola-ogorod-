@@ -1,11 +1,18 @@
 .header {max-width: 1440px;}
+@media (max-width: 768px) {
+    .nav-item {
+          border-bottom: 2px solid seagreen;
+    }
+}
 
-@media (max-width: 768px)
-{.navbar-nav {flex-direction: column;}
+@media (max-width: 1024px)
+{.navbar-nav {display: flex;
+    flex-direction: row;
+flex-wrap: wrap;}
     .navbar-toggler {border: 0px solid white;
 .navbar-toggler-icon {color: greenyellow;}};
 .nav-item {height: 90px;
-    border-bottom: 2px solid seagreen;
+  
     width: 100%;}
   
  @media (max-width: 425px)  {
@@ -14,6 +21,7 @@ grid-template-rows: 210px 1fr;
 grid-template-areas: "logo language"
 "middle middle";}
 }}
+// .nav-link {font-size: 17px;}}
 
 @media (min-width:769px)
 {
@@ -28,15 +36,21 @@ grid-template-areas: "logo language"
     }}
 
 
-    @media (max-width: 1023px) 
-    {
-    .nav-link {width: 100%;} 
-    }
-
-    @media (min-width:1440px)
-    {
-        .nav-link {width: 100%;}    
-    }
+    @media (min-width: 1025px) 
+    {.navbar-nav {width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    padding: 0px 10px 40px 10px;
+    .nav-item { display: flex;
+        flex-wrap: wrap;
+    .nav-link {text-align:center;
+        text-decoration: none;
+        font-size: 23px;
+    font-family: 'Mark';
+    color: rgb(49, 102, 19);}}}}
+    
 
  
        
